@@ -4,7 +4,7 @@ name: Oh boy 3am
 
 on:
   schedule:
-    - cron: "16 2 * * *" # run daily at 7:00 UTC (3am EDT)
+    - cron: "20 2 * * *" # run daily at 7:00 UTC (3am EDT)
 
 jobs:
   post tweet:
