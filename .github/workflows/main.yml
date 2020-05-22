@@ -4,13 +4,10 @@ name: Oh boy 3am
 
 on:
   schedule:
-    - cron: "0 7 * * *"
-  push:
-    branches:
-      - master
+    - cron: "0 7 * * *" # run daily at 7:00 UTC (3am EDT)
 
 jobs:
-  build:
+  post tweet:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
