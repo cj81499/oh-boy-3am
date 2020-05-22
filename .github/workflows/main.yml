@@ -1,28 +1,29 @@
 # This workflow will install Python dependencies and post the tweet every day at 3am.
 
-name: Oh boy 3am
+# commented this out b/c I'm using Google Cloud Platform b/c the cron timing seems kinda off...
+# name: Oh boy 3am
 
-on:
-  schedule:
-    - cron: "00 07 * * *" # run daily at 7:00 UTC (3am EDT)
+# on:
+#   schedule:
+#     - cron: "00 07 * * *" # run daily at 7:00 UTC (3am EDT)
 
-jobs:
-  post-tweet:
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@v2
-    - name: Set up Python 3.8
-      uses: actions/setup-python@v2
-      with:
-        python-version: 3.8
-    - name: Install dependencies
-      run: |
-        python -m pip install --upgrade pip
-        pip install -r requirements.txt
-    - name: Post tweet
-      run: python main.py
-      env:
-        CONSUMER_KEY: ${{ secrets.CONSUMER_KEY}}
-        CONSUMER_SECRET: ${{ secrets.CONSUMER_SECRET}}
-        ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN}}
-        ACCESS_SECRET: ${{ secrets.ACCESS_SECRET}}
+# jobs:
+#   post-tweet:
+#     runs-on: ubuntu-latest
+#     steps:
+#     - uses: actions/checkout@v2
+#     - name: Set up Python 3.8
+#       uses: actions/setup-python@v2
+#       with:
+#         python-version: 3.8
+#     - name: Install dependencies
+#       run: |
+#         python -m pip install --upgrade pip
+#         pip install -r requirements.txt
+#     - name: Post tweet
+#       run: python main.py
+#       env:
+#         CONSUMER_KEY: ${{ secrets.CONSUMER_KEY}}
+#         CONSUMER_SECRET: ${{ secrets.CONSUMER_SECRET}}
+#         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN}}
+#         ACCESS_SECRET: ${{ secrets.ACCESS_SECRET}}
