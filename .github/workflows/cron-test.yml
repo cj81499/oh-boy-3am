@@ -7,7 +7,7 @@ on:
     - cron: "*/5 * * * *" # run daily at 7:00 UTC (3am EDT)
 
 jobs:
-  post tweet:
+  post-tweet:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
