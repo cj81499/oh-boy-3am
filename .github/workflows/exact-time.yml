@@ -1,6 +1,6 @@
 # This workflow will install Python dependencies and post the tweet every day at 3am.
 
-name: Oh boy 3am
+name: Oh boy 10:50 PM EDT
 
 on:
   schedule:
