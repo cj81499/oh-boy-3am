@@ -20,7 +20,8 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
       - name: Post tweet
-        run: python main.py
+        # run: python main.py
+        run: python -c "print('Hello, world!')"
         env:
           CONSUMER_KEY: ${{ secrets.CONSUMER_KEY}}
           CONSUMER_SECRET: ${{ secrets.CONSUMER_SECRET}}
