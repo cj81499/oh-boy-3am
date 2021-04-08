@@ -3,7 +3,8 @@
 name: Oh Boy 3am
 
 on:
-#   # as much as I wish this would work, Github Actions scheduling is too inconsistent w/ it's timing
+#   # as much as I wish this would work, Github Actions scheduling is too inconsistent.
+#   # see here: https://upptime.js.org/blog/2021/01/22/github-actions-schedule-not-working/
 #   schedule:
 #     - cron: "00 07 * * *" # run daily at 7:00 UTC (3am EDT)
     
