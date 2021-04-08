@@ -3,9 +3,9 @@
 name: Oh Boy 3am
 
 on:
-  schedule:
-    # - cron: "00 07 * * *" # run daily at 7:00 UTC (3am EDT)
-    - cron: '10 18 * * *' # run in a few minutes from now (testing!)
+#   # as much as I wish this would work, Github Actions scheduling is too inconsistent w/ it's timing
+#   schedule:
+#     - cron: "00 07 * * *" # run daily at 7:00 UTC (3am EDT)
     
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
