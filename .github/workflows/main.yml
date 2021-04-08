@@ -4,7 +4,8 @@ name: Oh Boy 3am
 
 on:
   schedule:
-    - cron: "00 07 * * *" # run daily at 7:00 UTC (3am EDT)
+    # - cron: "00 07 * * *" # run daily at 7:00 UTC (3am EDT)
+    - cron: "55 14 * * *" # run in a few minutes from now (testing!)
 
 jobs:
   post-tweet:
