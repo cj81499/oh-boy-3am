@@ -1,3 +1,3 @@
-# oh boy 3am
+# OH BOY 3AM
 
-Source code for the [Oh boy 3am](https://twitter.com/OH_BOY_3_AM_BOT) Twitter bot.
+Source code for the [OH BOY 3AM](https://mas.to/@oh_boy_3_am) Mastodon bot.
