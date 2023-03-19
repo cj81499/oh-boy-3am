@@ -1,0 +1,13 @@
+{
+  "deno.enable": true,
+  "editor.formatOnSave": true,
+  "files.associations": {
+    ".env*": "properties"
+  },
+  "[typescript][javascript][json][jsonc]": {
+    "editor.defaultFormatter": "denoland.vscode-deno"
+  },
+  "[yaml]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  }
+}

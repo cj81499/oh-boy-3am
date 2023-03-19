@@ -1,0 +1,17 @@
+name: OH BOY 3AM
+
+on:
+  # Github Actions scheduling was inconsistent last time I tried this.
+  # Hopefully it's gotten better?
+  schedule:
+    - cron: "00 07 * * *" # run daily at 7:00 UTC (3am EDT)
+    # TODO: make this work for EST and EDT
+
+jobs:
+  post-tweet:
+    runs-on: ubuntu-latest
+    steps:
+      # # Call post workflow
+      # - uses: .github/workflows/post.yaml
+
+      - run: date # See how reliable GitHub actions scheduling is

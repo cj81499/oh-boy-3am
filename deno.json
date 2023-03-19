@@ -1,0 +1,9 @@
+{
+  "imports": {
+    "masto": "npm:masto@5.8.0"
+  },
+  "tasks": {
+    "run": "deno run --cached-only --allow-env --allow-read --allow-net main.ts",
+    "install": "deno cache main.ts"
+  }
+}
